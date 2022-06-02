@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>
+                My Bottom Menu
+            </title>
+        </head>
+        <link rel="stylesheet" href="style2.css">
+    <body>
+     
+        <div class="navigation">
+            <ul>
+               
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                                              </span>                                 
+                        <span class="text">About</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="create-outline"></ion-icon>
+                        </span>
+                        <span class="text">Skill</span>
+                    </a>
+                </li>
+
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="ribbon-outline"></ion-icon>
+                        </span>
+                        <span class="text">Quality</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="construct-outline"></ion-icon>                       
+                         </span>
+                        <span class="text">Service</span>
+                    </a>
+                </li>
+
+                <!-- <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </span>
+                        <span class="text">Blog</span>
+                    </a>
+                </li> -->
+                <div class="indicator">
+
+                </div>
+            </ul>
+        </div>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activelink(){
+                list.forEach((item) =>
+                item.classList.remove('active')
+                );
+                this.classList.add('active');
+            }
+            list.forEach((item) =>
+            item.addEventListener('click',activelink));
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
